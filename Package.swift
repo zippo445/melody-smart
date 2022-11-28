@@ -9,7 +9,10 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "MelodySmart",
-            targets: ["MelodySmart", "IontoManager"]),
+            targets: ["MelodySmart"]),
+        .library(
+            name: "IontoManager",
+            targets: ["IontoManager"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
