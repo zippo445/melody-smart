@@ -51,7 +51,7 @@ public class IontoDevice {
 
     public func getDevices() -> [DeviceDescription]{
         
-        var devices = [DeviceDescription]();
+        let devices = [DeviceDescription]();
         
       
         return devices;

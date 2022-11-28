@@ -21,6 +21,9 @@ let package = Package(
         .target(
             name: "MelodySmart",
             dependencies: []),
+        .target(
+            name: "IontoManager",
+            dependencies: []),
         .testTarget(
             name: "MelodySmartTests",
             dependencies: ["MelodySmart"]),
