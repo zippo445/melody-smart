@@ -21,12 +21,12 @@ public class IontoDevice {
     var initialized = false;
     var scanning = false;
     
-    func scan () {
+    public func scan () {
         scanning = true;
         
     }
     
-    func stopScan () {
+    public func stopScan () {
         self.scanning = false;
     }
     
@@ -34,7 +34,7 @@ public class IontoDevice {
         return self.scanning;
     }
     
-    func initialize() -> String {
+    public func initialize() -> String {
         if (initialized){
             return "Already initialized";
         }
@@ -49,7 +49,7 @@ public class IontoDevice {
     
     
 
-    func getDevices() -> [DeviceDescription]{
+    public func getDevices() -> [DeviceDescription]{
         
         var devices = [DeviceDescription]();
         
